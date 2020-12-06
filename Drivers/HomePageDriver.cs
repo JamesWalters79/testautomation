@@ -7,9 +7,17 @@ namespace testautomation.Drivers
 {
     public class HomePageDriver
     {
-        public void GoToPage()
+        public bool GoToHomePage()
         {
             var homePageObject = new HomePageObject();
+            homePageObject.GoToHomePage();
+            return homePageObject.isHomePageShown();
+        }
+
+        public void SelectMenuitem(string parent, string child, string grandChild)
+        {
+            var homePageObject = new HomePageObject();
+            homePageObject.SelectMenuItem(parent, child, grandChild);
         }
     }
 }

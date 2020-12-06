@@ -7,8 +7,8 @@ Scenario: View summer dresses catalog products
 	Then the shopper sees "product count" products in the collection
 
 Examples: Summer Dresses
-    | parent | child   | grandchild     | product count |
-    | Women  | Dresses | Summer Dresses | 3             |
+    | parent | child   | grandchild     | product count | category |
+    | Women  | Dresses | Summer Dresses | 3             | 11       |
 
 
 @ui @catalog @filtercatalog

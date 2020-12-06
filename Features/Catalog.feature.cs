@@ -70,7 +70,7 @@ namespace testautomation.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void ViewSummerDressesCatalogProducts(string parent, string child, string grandchild, string productCount, string[] exampleTags)
+        public virtual void ViewSummerDressesCatalogProducts(string parent, string child, string grandchild, string productCount, string category, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "ui",
@@ -86,6 +86,7 @@ namespace testautomation.Features
             argumentsOfScenario.Add("child", child);
             argumentsOfScenario.Add("grandchild", grandchild);
             argumentsOfScenario.Add("product count", productCount);
+            argumentsOfScenario.Add("category", category);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("View summer dresses catalog products", null, tagsOfScenario, argumentsOfScenario);
 #line 4
 this.ScenarioInitialize(scenarioInfo);
@@ -127,7 +128,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void ViewSummerDressesCatalogProducts_SummerDresses_Women()
         {
 #line 4
-this.ViewSummerDressesCatalogProducts("Women", "Dresses", "Summer Dresses", "3", ((string[])(null)));
+this.ViewSummerDressesCatalogProducts("Women", "Dresses", "Summer Dresses", "3", "11", ((string[])(null)));
 #line hidden
         }
         
