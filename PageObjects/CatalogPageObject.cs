@@ -8,10 +8,22 @@ namespace testautomation.PageObjects
 {
     class CatalogPageObject
     {
-        public void GoToPage()
+        public void AddProductToCart(string product)
         {
-            //Navigate to the Catalog Page
+            //Add the product to the cart
+           
         }
+
+        public void ContinueShopping()
+        {
+            //Select continue shopping
+        }
+
+        public void GoToCart()
+        {
+            //Select go to cart
+        }
+
 
         public void SetUpperPriceRange(string lower)
         {
@@ -27,11 +39,13 @@ namespace testautomation.PageObjects
 
         public string GetUpperPriceRange()
         {
+            //Get upper price range from price range slider
             return "$30.50";
         }
 
         public string GetLowerPriceRange()
         {
+            //Get lower price range from price range slider
             return "$30.50";
         }
 

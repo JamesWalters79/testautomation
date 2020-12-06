@@ -6,14 +6,27 @@ namespace testautomation.PageObjects
 {
     class AuthenticationPageObject
     {
-        public void GoToPage()
+        public void GoToAuthenticationPage()
         {
-
+            //navigate to authentication page http://automationpractice.com/index.php?controller=authentication&back=my-account
         }
 
-        public void RegisterEmailAddress(string email)
+        public bool isShown()
         {
+            //Check URL and return true if URL is like a catalog page URL http://automationpractice.com/index.php?controller=authentication&back=my-account
+            return true;
+        }
 
+
+        public void EnterEmailAddress(string email)
+        {
+            //enter the email address
+           
+        }
+
+        public void SelectCreateAnAccount()
+        {
+            //select the create an account button
         }
 
     }

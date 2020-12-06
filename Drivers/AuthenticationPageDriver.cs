@@ -7,13 +7,18 @@ namespace testautomation.Drivers
 {
     public class AuthenticationPageDriver
     {
-        public void RegisterEmailAddress(string email)
+
+        public void GoToAuthenticationPage()
         {
             var authenticationPageObject = new AuthenticationPageObject();
+            authenticationPageObject.GoToAuthenticationPage();
+        }
 
-            authenticationPageObject.GoToPage();
-
-            authenticationPageObject.RegisterEmailAddress(email);
+        public void RegisterEmailAddress(string email)
+        {
+            var authenticationPageObject = new AuthenticationPageObject();            
+            authenticationPageObject.EnterEmailAddress(email);
+            authenticationPageObject.SelectCreateAnAccount();
         }
     }
 }

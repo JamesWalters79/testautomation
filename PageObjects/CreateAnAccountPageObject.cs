@@ -6,108 +6,177 @@ namespace testautomation.PageObjects
 {
     class CreateAnAccountPageObject
     {
-        public void GoToPage(string producttype)
+        public bool isPageShown()
         {
+            //returns true if URL is http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation
+            return true;
+        }
+
+        public string GetEmail()
+        {
+            //returns true if email field is set to email
+            return "email";
+        }
+
+        public bool SetTitle(string title)
+        {
+            //select title radio button
+
+            //return true if field and page validation passes
+            return true;
+        }
+
+
+        public bool SetFirstName(string firstname)
+        {
+            //enter first name in text control
+
+            //return true if field validation passes
+            return true;
+        }
+
+        public bool SetLastName(string lastname)
+        {
+            //enter last name in text control
+
+            //return true if field validation passes
+            return true;
+        }
+
+        public bool SetPassword(string password)
+        {
+            //enter password in text control
+
+            //return true if field validation passes
+            return true;
+        }
+
+        public bool SetDateOfBirthDay(string day)
+        {
+            //select day from drop down
+
+            //return true if field and page validation passes
+            return true;
+        }
+
+        public bool SetDateOfBirthMonth(string month)
+        {
+            //select month from drop down
+
+            //return true if field and page validation passes
+            return true;
+        }
+
+        public bool SetDateOfBirthYear(string year)
+        {
+            //select year from drop down
+
+            //return true if field and page validation passes
+            return true;
+        }
+
+        public void SetNewsLetter(string newsletter)
+        {
+            //toggle newsletter to correct state
+        }
+
+        public void SetOffers(string offers)
+        {
+            //toggle offers to correct state
 
         }
 
-        public void SetTitle(string title)
+        public bool SetCompany(string company)
         {
+            //enter the company in text control
 
-        }   
-
-        public void SetFirstName(string firstname)
-        {
-
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetLastName(string lastname)
+        public bool SetAddressLine1(string adress)
         {
+            //enter address line 1 in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetPassword(string password)
+        public bool SetAddressLine2(string adress)
         {
+            //enter address line 2 in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetDateOfBirth(string dateofbirth)
+        public bool SetCity(string city)
         {
+            //enter the city in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetNewsLetter(Boolean newsletter)
+        public bool SetState(string state)
         {
+            //select the state from drop down
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetOffers(Boolean offers)
+        public bool SetZip(string zip)
         {
+            //enter the zip in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetCompany(string company)
+        public bool SetCountry(string country)
         {
+            //select the country from dorp down
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetAddress(string adress)
+        public bool SetAdditionalInformation(string adress)
         {
+            //enter the additional information in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetAddressLine2(string adress)
+        public bool SetHomeNumber(string home)
         {
+            //enter the home number in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetCity(string city)
+        public bool SetMobileNumber(string mobile)
         {
+            //enter the mobile number in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetState(string state)
+        public bool SetAlias(string alias)
         {
+            //enter the alias text in text control
 
+            //return true if field and page validation passes
+            return true;
         }
 
-        public void SetZip(string zip)
+        public void SelectRegister()
         {
-
-        }
-
-        public void SetCountry(string country)
-        {
-
-        }
-
-        public void SetAdditionalInformation(string adress)
-        {
-
-        }
-
-        public void SetHome(string home)
-        {
-
-        }
-        public void SetMobile(string mobile)
-        {
-
-        }
-
-        public void SetAlias(string alias)
-        {
-
-        }
-
-        public void Register()
-        {
-
-        }
-
-        public string AccountName()
-        {
-            return "Account Name";
+            //press the register button
         }
     }
 }

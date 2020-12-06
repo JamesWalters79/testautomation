@@ -28,5 +28,11 @@ namespace testautomation.PageObjects
             return true;
         }
 
+        public string isLoggedInAs()
+        {
+            //Check menu bar for account name
+            return "name";
+        }
+
     }
 }

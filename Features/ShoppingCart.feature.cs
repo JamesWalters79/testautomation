@@ -70,7 +70,7 @@ namespace testautomation.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void RemoveProductFromTheShoppingCart(string parent, string product, string[] exampleTags)
+        public virtual void RemoveProductFromTheShoppingCart(string parent, string child, string grandchild, string product, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "ui",
@@ -83,6 +83,8 @@ namespace testautomation.Features
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("parent", parent);
+            argumentsOfScenario.Add("child", child);
+            argumentsOfScenario.Add("grandchild", grandchild);
             argumentsOfScenario.Add("product", product);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Remove product from the shopping cart", null, tagsOfScenario, argumentsOfScenario);
 #line 4
@@ -106,7 +108,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 5
- testRunner.Given("a \"product\" is added to the shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a \"parent\" \"child\" \"grandchild\" \"product\" is added to the shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
  testRunner.When("the shopper views the shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -124,14 +126,14 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Remove product from the shopping cart, BasketProducts, T-Shirts", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Remove product from the shopping cart, ShoppingCartProducts, Women", new string[] {
                 "ui",
                 "shoppingcart",
                 "removeproduct"}, SourceLine=12)]
-        public virtual void RemoveProductFromTheShoppingCart_BasketProducts_T_Shirts()
+        public virtual void RemoveProductFromTheShoppingCart_ShoppingCartProducts_Women()
         {
 #line 4
-this.RemoveProductFromTheShoppingCart("T-Shirts", "FadedShort Sleeve T-Shirt", ((string[])(null)));
+this.RemoveProductFromTheShoppingCart("Women", "Dresses", "Summer Dresses", "Printed Chiffon Dress", ((string[])(null)));
 #line hidden
         }
     }

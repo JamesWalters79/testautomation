@@ -7,12 +7,6 @@ namespace testautomation.Drivers
 {
     public class CatalogPageDriver
     {
-        public bool GoToPage()
-        {
-            var catalogPageObject = new CatalogPageObject();
-            catalogPageObject.GoToPage();
-            return catalogPageObject.isShown();
-        }
 
         public bool isCategoryShown(string category)
         {
@@ -54,6 +48,27 @@ namespace testautomation.Drivers
         {
             var catalogPageObject = new CatalogPageObject();
             return catalogPageObject.GetProductPrices();
+        }
+
+        public void AddProductToCart(string product, string catalogOption)
+        {
+            var catalogPageObject = new CatalogPageObject();
+            catalogPageObject.AddProductToCart(product);
+
+            switch (catalogOption.ToString())
+            {
+                case "continueshopping" :
+                    catalogPageObject.ContinueShopping();
+                    break;
+                case "gotocart":
+                    catalogPageObject.GoToCart();
+                    break;
+
+                default:
+                    catalogPageObject.ContinueShopping();
+                    break;
+            }
+            
         }
             
     }

@@ -76,11 +76,14 @@ namespace testautomation.Features
                     string last, 
                     string email, 
                     string password, 
-                    string dOB, 
+                    string day, 
+                    string month, 
+                    string year, 
                     string newsletters, 
                     string offers, 
                     string company, 
-                    string address, 
+                    string addressline1, 
+                    string addressline2, 
                     string city, 
                     string state, 
                     string country, 
@@ -107,11 +110,14 @@ namespace testautomation.Features
             argumentsOfScenario.Add("last", last);
             argumentsOfScenario.Add("email", email);
             argumentsOfScenario.Add("password", password);
-            argumentsOfScenario.Add("DOB", dOB);
+            argumentsOfScenario.Add("day", day);
+            argumentsOfScenario.Add("month", month);
+            argumentsOfScenario.Add("year", year);
             argumentsOfScenario.Add("newsletters", newsletters);
             argumentsOfScenario.Add("offers", offers);
             argumentsOfScenario.Add("company", company);
-            argumentsOfScenario.Add("address", address);
+            argumentsOfScenario.Add("addressline1", addressline1);
+            argumentsOfScenario.Add("addressline2", addressline2);
             argumentsOfScenario.Add("city", city);
             argumentsOfScenario.Add("state", state);
             argumentsOfScenario.Add("country", country);
@@ -155,7 +161,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("the shopper enters the password \"password\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 9
- testRunner.And("the shopper enters the date of birth \"dob\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the shopper enters the date of birth \"day\" \"month\" \"year\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
  testRunner.And("the shopper sets the newsletters to \"newsletters\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -167,7 +173,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("the shopper enters the company \"company\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
- testRunner.And("the shopper enters the address line \"address\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the shopper enters the address line \"addressline1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 14
  testRunner.And("the shopper enters the city \"city\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -210,7 +216,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void CreateAnAccountWithValidUnregisteredEmailAddress_ValidShoppers_Mr()
         {
 #line 4
-this.CreateAnAccountWithValidUnregisteredEmailAddress("Mr", "Bob", "Fossil", "bob.fossil@example.com", "password123", "12-1-1980", "true", "false", "Zoo", "1 Zoo Road", "Zoo Town", "Zoo State", "Zoo County", "Test Test Test", "01223434343", "07799766543", "Work", "BS1 7AG", "accountname", ((string[])(null)));
+this.CreateAnAccountWithValidUnregisteredEmailAddress("Mr", "Bob", "Fossil", "bob.fossil@example.com", "password123", "12", "January", "1980", "true", "false", "Zoo", "Zoo Building", "1 Zoo Road", "Zoo", "Zoo State", "Zoo Country", "Test Test Test", "01223434343", "07799766543", "Work", "BS1 7AG", "accountname", ((string[])(null)));
 #line hidden
         }
     }
