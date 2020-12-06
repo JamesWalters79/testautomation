@@ -1,6 +1,6 @@
-﻿Feature: Map
+﻿Feature: OurStores
 
-@ui @map @scrollmap
+@ui @ourstores @scrollmap
 Scenario: Scroll the map
 	Given the our stores page is displayed
 	When the shopper scroll the map "xdirection" by "xsteps" 
@@ -9,4 +9,4 @@ Scenario: Scroll the map
 
 Examples: Map
 | xdirection | xsteps | ydirection | ysteps | reference |
-| north      | 10     | east           |10     | image.png |
+| north      | 10     | east       |10      | image.png |

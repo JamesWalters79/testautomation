@@ -19,22 +19,22 @@ namespace testautomation.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Map", SourceFile="Features\\Map.feature", SourceLine=0)]
-    public partial class MapFeature
+    [TechTalk.SpecRun.FeatureAttribute("ShoppingCart", SourceFile="Features\\ShoppingCart.feature", SourceLine=0)]
+    public partial class ShoppingCartFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Map.feature"
+#line 1 "ShoppingCart.feature"
 #line hidden
         
         [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Map", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "ShoppingCart", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,24 +70,21 @@ namespace testautomation.Features
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void ScrollTheMap(string xdirection, string xsteps, string ydirection, string ysteps, string reference, string[] exampleTags)
+        public virtual void RemoveProductFromTheShoppingCart(string parent, string product, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "ui",
-                    "map",
-                    "scrollmap"};
+                    "shoppingcart",
+                    "removeproduct"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("xdirection", xdirection);
-            argumentsOfScenario.Add("xsteps", xsteps);
-            argumentsOfScenario.Add("ydirection", ydirection);
-            argumentsOfScenario.Add("ysteps", ysteps);
-            argumentsOfScenario.Add("reference", reference);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Scroll the map", null, tagsOfScenario, argumentsOfScenario);
+            argumentsOfScenario.Add("parent", parent);
+            argumentsOfScenario.Add("product", product);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Remove product from the shopping cart", null, tagsOfScenario, argumentsOfScenario);
 #line 4
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -109,29 +106,32 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 5
- testRunner.Given("the our stores page is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("a \"product\" is added to the shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
- testRunner.When("the shopper scroll the map \"xdirection\" by \"xsteps\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("the shopper views the shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
- testRunner.And("the shopper scrolls the map \"ydirection\" by \"ysteps\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the shopper removes the \"product\" from the shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 8
- testRunner.Then("the maps shows the correct location \"reference\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the \"product\" is removed from shopping cart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 9
+ testRunner.And("the shopping cart is empty", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Scroll the map, Map, north", new string[] {
+        [TechTalk.SpecRun.ScenarioAttribute("Remove product from the shopping cart, BasketProducts, T-Shirts", new string[] {
                 "ui",
-                "map",
-                "scrollmap"}, SourceLine=11)]
-        public virtual void ScrollTheMap_Map_North()
+                "shoppingcart",
+                "removeproduct"}, SourceLine=12)]
+        public virtual void RemoveProductFromTheShoppingCart_BasketProducts_T_Shirts()
         {
 #line 4
-this.ScrollTheMap("north", "10", "east", "10", "image.png", ((string[])(null)));
+this.RemoveProductFromTheShoppingCart("T-Shirts", "FadedShort Sleeve T-Shirt", ((string[])(null)));
 #line hidden
         }
     }

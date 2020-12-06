@@ -16,7 +16,7 @@ Scenario: Filter by price summer dresses catalog products
 	Given the store home page is displayed
 	When the shopper views the "parent" "child" "grandchild" collection
 	And the shopper sets the minimum price to "minimum"
-	And the shoppe sets the maximum price to "maximum"
+	And the shopper sets the maximum price to "maximum"
 	Then the shopper sees "product count" products in the collection
 	And the price for each product is less than "maximum"
 	And the price for eac product is greater than "minimum"

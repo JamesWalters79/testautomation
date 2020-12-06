@@ -180,7 +180,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("the shopper sets the minimum price to \"minimum\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 19
- testRunner.And("the shoppe sets the maximum price to \"maximum\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the shopper sets the maximum price to \"maximum\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 20
  testRunner.Then("the shopper sees \"product count\" products in the collection", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
