@@ -14,10 +14,16 @@ namespace testautomation.Drivers
             return homePageObject.isHomePageShown();
         }
 
-        public void SelectMenuItem(string parent, string child, string grandChild)
+        public void SelectProductMenuItem(string parent, string child, string grandChild)
         {
             var homePageObject = new HomePageObject();
-            homePageObject.SelectMenuItem(parent, child, grandChild);
+            homePageObject.SelectProductMenuItem(parent, child, grandChild);
+        }
+
+        public void SelectInformationMenuItem(string child)
+        {
+            var homePageObject = new HomePageObject();
+            homePageObject.SelectInformationMenuItem(child);
         }
 
         public string isLoggedInAs()

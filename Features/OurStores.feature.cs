@@ -131,7 +131,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void ScrollTheMap_Map_North()
         {
 #line 4
-this.ScrollTheMap("north", "10", "east", "10", "image.png", ((string[])(null)));
+this.ScrollTheMap("north", "10", "east", "10", "c:\\image.png", ((string[])(null)));
 #line hidden
         }
     }

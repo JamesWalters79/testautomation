@@ -26,7 +26,7 @@ namespace testautomation.Steps
         [When(@"the shopper views the ""(.*)"" ""(.*)"" ""(.*)"" collection")]
         public void WhenTheShopperViewsTheCollection(string parent, string child, string grandchild)
         {
-            homePageDriver.SelectMenuItem(parent, child, grandchild);
+            homePageDriver.SelectProductMenuItem(parent, child, grandchild);
             catalogPageDriver.isCategoryShown(grandchild).Should().BeTrue();
         }
 

@@ -13,13 +13,18 @@ namespace testautomation.PageObjects
             //Navigate to the HomePage
         }
 
-        public void SelectMenuItem(string parent, string child, string grandChild)
+        public void SelectProductMenuItem(string parent, string child, string grandChild)
         {
             //Select Parent Menu Item
 
             //Select Child Menu Item
 
             //Select Grand Child Menu Item
+        }
+
+        public void SelectInformationMenuItem(string child)
+        {
+            //select child item of Informtion menu in page footer
         }
 
         public bool isHomePageShown()

@@ -9,4 +9,4 @@ Scenario: Scroll the map
 
 Examples: Map
 | xdirection | xsteps | ydirection | ysteps | reference |
-| north      | 10     | east       |10      | image.png |
+| north      | 10     | east       |10      | c:\image.png |

@@ -24,7 +24,7 @@ namespace testautomation.Steps
         public void GivenAIsAddedToTheShoppingCart(string parent, string child, string grandChild, string product)
         {
             homePageDriver.GoToHomePage();
-            homePageDriver.SelectMenuItem(parent, child, grandChild);
+            homePageDriver.SelectProductMenuItem(parent, child, grandChild);
             catalogPageDriver.AddProductToCart(product, "continueshopping");
             shoppingCartPageDriver.GoToShoppingCart();
             shoppingCartPageDriver.isProductInCart(product).Should().BeTrue();
